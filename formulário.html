@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0">
+	<title>Biblioteca X</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" type="text/css" href="pseudo-seletores.css">
+  <!--início formatação CSS-->
+   <style type="text/css">
+   	body{
+      background-image: url(imagens/fundovermelho.jpg);
+   	}
+    b {
+    	color: white;
+     
+    }
+    fieldset{
+      text-align: center;
+    }
+    .button {
+      background-color: lightgray;
+      border-bottom: 5px solid gray;
+      border-right: 5px solid gray;
+      border-top: 5px solid lightgray;
+      border-left: 5px solid lightgray;
+      width: 100%;
+      color:black;
+      padding: 10px 0px 10px 0px;
+      border-radius: 5px;
+      font-size: 20px;
+      text-shadow: 1px 1px gray;
+      margin-bottom: 5px;
+    }
+
+    .button:hover {
+      background-color: #2ecc71;
+      border-bottom: 5px solid #2ecc71;
+      border-right: 5px solid #2ecc71;
+      border-top: 5px solid #27ae60;
+      border-left: 5px solid #27ae60;
+    }
+
+    .button:focus{
+      background-color: #2ecc71;
+      border-bottom: 5px solid #2ecc71;
+      border-right: 5px solid #2ecc71;
+      border-top: 5px solid #27ae60;
+      border-left: 5px solid #27ae60;
+    }
+    
+    #aluno,#livro,#emprestimo,input{
+      font-family: Segoe Print;
+      
+    }
+    legend{
+      font-size: 30px;
+    }
+    h1{
+      font-family:Segoe Print;
+      color: blue; 
+    }
+    #aluno, #livro, #emprestimo{
+      width: 25%;
+      margin-left: 35%;
+    }
+   </style>
+<!--término formatação CSS-->
+</head>
+<!--início corpo da página -->
+<body>
+  <a href="informacoes.html">Home</a>
+<p><h1 align="center"><b>Empréstimo de Livro</b></h1></p>
+<form>
+  <div id="aluno">
+	<fieldset>
+		<legend><b>Aluno</b></legend>
+	<p><b>Nome:</b>
+	<input type="text" name="aluno" placeholder="Aluno"></p>
+	<p><b>RA:</b>
+	<input type="text" name="ra" placeholder="RA"></p>
+	<p><b>Sexo:</b></p>
+	<input type="radio" name="sexo" value="M">M
+	<input type="radio" name="sexo" value="F">F
+	<p><b>Email:</b></p>
+	<input type="email" name="d">
+	<p><b>Celular:</b></p>
+	<input type="text" name="celular">
+	<p><b>Turno:</b></p>
+	<input type="radio" name="Turno" value="Manhã"><b>Manhã</b>
+	<input type="radio" name="Turno" value="Tarde"><b>Tarde</b>
+	<input type="radio" name="Turno" value="Noite"><b>Noite</b>
+</fieldset>
+</div>
+
+<div id="livro">
+<fieldset>
+	<legend><b>Livro</b></legend>
+	<p><b>Nome:</b></p>
+    <input type="text" name="livro">
+    <p><b>Tombo</b></p>
+    <input type="text" name="tombo">
+    <p><b>Autor</b></p>
+    <input type="text" name="autor">
+    <p><b>Versão</b></p>
+    <input type="text" name="versao">
+</fieldset>
+</div>
+
+<div id="emprestimo">
+  <fieldset>
+<legend><p><b>Data de Empréstimo:</b></p></legend>
+	<input type="date" name="data">
+	<p><b>Horário de Empréstimo:</b></p>
+  	<input type="time" name="horario"><br><br>
+  </fieldset>
+  <br><br>
+   <input type="submit" value="Cadastrar" class="button">
+   <input type="reset" value="Resetar" class="button">
+ </div>
+</form>
+<!--término corpo da página -->
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0">
+	<title>Cadastro da Biblioteca Boa Alvorada</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" type="text/css" href="pseudo-seletores.css">
+  <!--início formatação CSS-->
+<style type="text/css">
+  body  {
+    background-image: url(fundo2.jpg);
+  }
+  form fieldset {
+    background-image: url(fundo.jpg);
+    background-size: 100%;
+    border: 1px solid #090;
+    background-repeat: repeat;
+  }
+
+  b{
+    font-family: Baskerville Old Face;
+    color: rgb(0,0,159);
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .salve{
+    color: black;
+    font-family:Segoe Print;
+  }
+  .apague{
+    color: black;
+    font-family:Segoe Print;
+  }
+  h1{
+    font-size: 40px;
+    font-family:Segoe Print;
+  }
+  b{
+    font-family:Segoe Print;
+  }
+  .button {
+      background-color: lightgray;
+      border-bottom: 5px solid gray;
+      border-right: 5px solid gray;
+      border-top: 5px solid lightgray;
+      border-left: 5px solid lightgray;
+      width: 100%;
+      color:black;
+      padding: 10px 0px 10px 0px;
+      border-radius: 5px;
+      font-size: 20px;
+      text-shadow: 1px 1px gray;
+      margin-bottom: 5px;
+      width: 37%;
+      margin-left: 31.5%;
+    }
+
+    .button:hover {
+      background-color: #2ecc71;
+      border-bottom: 5px solid #2ecc71;
+      border-right: 5px solid #2ecc71;
+      border-top: 5px solid #27ae60;
+      border-left: 5px solid #27ae60;
+    }
+
+    .button:focus{
+      background-color: #2ecc71;
+      border-bottom: 5px solid #2ecc71;
+      border-right: 5px solid #2ecc71;
+      border-top: 5px solid #27ae60;
+      border-left: 5px solid #27ae60;
+    }
+    #campos{
+      margin-left: 500px;
+      margin-right: 500px;
+       
+    }
+    .mm{ 
+      width: 100%;
+      height: 30px;
+      margin-top: 5px;
+            background-color: lightgray;
+            border-radius: 10px;
+     }
+    
+</style>
+<!--término formatação CSS-->
+</head>
+<!--início corpo da página -->
+<body>
+  <a href="informacoes.html">Home</a>
+<h1 align="center"><b>Cadastro de Usuário</b></h1>
+<form>
+  <div id="campos">
+
+   <fieldset>
+ <b>Nome:</b><br>
+  <input class="mm" type="text" placeholder="Digite seu Nome" size="25"><br> 
+   <b>Data de Nascimento:</b><br>
+  <input class="mm" type="date"><br>
+ <b>E-mail:</b><br>
+  <input class="mm" type="email" size="25"><br>
+ <b>Telefone:</b><br>
+  <input class="mm" type="text" placeholder="(DDD)XXXXXXXXX"><br>
+ <b>Sexo:</b><br>
+ <input type="radio" name="Sexo" value="M" >M
+ <input type="radio" name="Sexo" value="F" >F<br>
+  <b>RA:</b><br>
+  <input class="mm" type="text"><br><br>
+
+</fieldset></div>
+
+<br><br>
+<div id="campos">
+  <fieldset>
+   
+  	<b>Endereço:</b>    
+  	<ul>
+  		<li><b>Rua:</b><br>
+              <input class="mm" type="text" size="20">
+  		</li>
+
+  		<li><b>Número:</b><br>
+  		      <input class="mm" type="number">
+  		 </li>
+
+        <li><b>Bairro:</b><br>
+            <input class="mm" type="text" size="20">
+        </li>
+
+        <li><b>Cidade:</b><br>
+        	 <input class="mm" type="text">
+        </li>
+
+        <li><b>Estado:</b><br>
+             <input class="mm" type="text">
+        </li>
+
+        <li><b>CEP:</b><br>
+             <input class="mm" type="text">
+        </li>
+
+        <li><b>Complemento:</b><br>
+             <input class="mm" type="text">
+        </li>
+      	</ul>
+             
+  </fieldset><br></div>
+<input type="submit" value="Cadastrar" class="button">
+<input type="reset" name="Resetar" class="button">
+</form>
+<!--término corpo da página -->
+</body>
+</html>
