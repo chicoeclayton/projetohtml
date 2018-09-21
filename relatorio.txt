@@ -1,0 +1,31 @@
+*git config --global user.name
+
+*git config --global user.email
+
+*git pull
+
+*git clone
+
+*cd
+*ls
+*git status*
+
+*git add.
+
+*git status
+
+*git commit -m
+
+*git push -u orign master 
+
+*git log
+
+*git branch
+
+*git branch -v
+
+*git merge master -m 
+
+*git checkout origin master
+
+*git branch --no-merged
